@@ -1,0 +1,181 @@
+/*=======================================
+
+    Universal Styling
+
+=========================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+/*====================================
+Header
+=====================================*/
+
+header {
+  
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 10;
+  position: fixed;
+  left: 0;
+  right: 0; 
+}
+
+header nav ul li {
+display: inline;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: thin;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+header nav a:hover {
+	color: #7B5617;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*==================================
+  FLip Card Styling
+======================================*/
+
+.flip-card {
+  width: 280px;
+  height: 280px;
+  display: inline-block;
+  background: transparent;
+  margin: 230px 0;
+}
+
+.flip-card-back h2 {
+  padding: 0;
+}
+
+.flip-card img {
+  width: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: width 2s, transform .6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 1px 4px 0 black;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  width: 50%;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: #45494e;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 100px 10px 0;
+}
+
+.flip-card-back a {
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-block;
+  font-weight: bold;
+  border-bottom: 1px dashed #d8b5ff;
+  transition: .3s;
+}
+
+.flip-card-back a:hover {
+  color: #d8b5ff;
+  transition: .3s;
+}
+
+/*======================================
+
+Content About Page Styling
+
+========================================*/
+
+.Column {
+  display: inline-block;
+  width: 30%;
+  background-color: white;
+}
